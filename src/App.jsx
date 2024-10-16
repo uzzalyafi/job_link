@@ -5,6 +5,11 @@ import Root from "./components/layouts/Root";
 import About from "./components/pages/About";
 import { Contact } from "lucide-react";
 import AllJobs from "./components/pages/AllJobs";
+import MyJobs from "./components/pages/MyJobs";
+import JobDetails from "./components/pages/JobDetails";
+import PostJobs from "./components/pages/PostJobs";
+import OnBoard from "./components/pages/OnBoard";
+import Appileants from "./components/pages/Appileants";
 
 const router = createBrowserRouter([
   {
@@ -15,12 +20,32 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/about",
+        element: <About />,
+      },
+      {
         path: "/jobs",
         element: <AllJobs />,
       },
       {
-        path: "/about",
-        element: <About />,
+        path: "/myJobs",
+        element: <MyJobs />,
+      },
+      {
+        path: "/jobDitails",
+        element: <JobDetails />,
+      },
+      {
+        path: "/postJobs",
+        element: <PostJobs />,
+      },
+      {
+        path: "/onBoard",
+        element: <OnBoard />,
+      },
+      {
+        path: "/appilliats",
+        element: <Appileants />,
       },
       {
         path: "/contact",
